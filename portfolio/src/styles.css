@@ -1,9 +1,156 @@
 #root {
-    height: 100%;
-    background-color: #0E1129;
+  height: 100%;
+  background-color: #0E1129;
 }
 
 
 body {
-    font-family: 'Spline Sans', sans-serif;
+  font-family: 'Spline Sans', sans-serif;
 }
+
+
+
+.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #8a2889;
+}
+
+.workButton:hover {
+  background-color: #E044DE;
+}
+
+.schoolButton {
+  background-color: #8a2889;
+}
+
+.schoolButton:hover {
+  background-color: #E044DE;
+}
+
+
+
+@media (max-width: 1024px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
+@media (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
+.vertical-timeline-element-content {
+  padding: 1em;
+  border-radius: 0.25em;
+  background: #fff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-0.25em);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+}
+
+.fade-in:nth-of-type(odd) {
+  transform: translateX(-50px);
+}
+
+.fade-in:nth-of-type(even) {
+  transform: translateX(50px);
+}
+
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+h1 {
+  position: relative;
+  animation-fill-mode: both;
+  
+}
+
+h1.slide-in {
+  animation: slide-in 1s ease-in-out;
+}
+
+h1.slide-out {
+  animation: slide-out 1s ease-in-out;
+}
+
+
+h2 {
+  position: relative;
+  animation-fill-mode: both;
+}
+
+h2.slide-in {
+  animation: slide-in 1s ease-in-out;
+}
+
+h2.slide-out {
+  animation: slide-out 1s ease-in-out;
+}
+
