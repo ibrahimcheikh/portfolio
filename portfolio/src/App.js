@@ -61,9 +61,9 @@ export default function App() {
         </p>
       </Content>
       <Time>
-        <h2  className={`${isTitleVisible ? "slide-out " : "slide-in"}`}
+        <h2 className={`${isTitleVisible ? "slide-out " : "slide-in"}`}
           ref={subTitleRef}>Overview</h2>
-     
+
         <VerticalTimeline >
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
@@ -162,6 +162,8 @@ const Time = styled.div`
   font-size: 16px;
   color: black;
   width: 100%;
+  display: flex;
+  flex-direction:column;
 
   @media (max-width: 1920px){
     transform:scale(0.99) translateX(1000px);
@@ -220,6 +222,8 @@ const Time = styled.div`
     color:white;
     font-size: 100px;
     font-weight:bold;
+    display: flex;
+    flex-direction:column;
     margin:0;
     justify-content: center;
     transition: opacity 0.5s ease-in-out;
