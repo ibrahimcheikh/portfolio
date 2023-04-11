@@ -170,6 +170,22 @@ const Time = styled.div`
     margin-left:-600px;
     margin-top:1000px;
   }
+
+  @media (max-width: 1300px){
+    transform:scale(0.85) translateX(800px);
+    right:auto;
+    left:50%;
+    margin-left:-600px
+  }
+
+  @media (max-width: 955px){
+    transform:scale(0.75) translateX(800px);
+    right:auto;
+    left:50%;
+    margin-left:-600px
+  }
+
+
   @media (max-width: 767px){
     transform:scale(0.65) translateX(800px);
     right:auto;
@@ -186,6 +202,14 @@ const Time = styled.div`
 
   @media (max-width: 569px){
     transform:scale(0.6) translateX(700px);
+    right:auto;
+    left:50%;
+    margin-left:-600px
+  }
+
+  
+  @media (max-width: 390px){
+    transform:scale(0.375) translateX(800px);
     right:auto;
     left:50%;
     margin-left:-600px
