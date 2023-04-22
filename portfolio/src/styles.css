@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   height: 100%;
   background-color: #0E1129;
@@ -6,6 +10,32 @@
 
 body {
   font-family: 'Spline Sans', sans-serif;
+}
+
+
+@media (max-width: 1286px) {
+  .spline {
+    transform: scale(0.8) translateX(-300px);
+  }
+}
+
+@media (max-width: 876px) {
+  .spline {
+    transform: scale(0.75) translateX(-100px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px
+  }
+
+}
+
+@media (max-width: 424px) {
+  .spline {
+    transform: scale(0.25) translateX(-50px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px
+  }
 }
 
 
@@ -57,6 +87,7 @@ h3 {
   background-color: #E044DE;
 }
 
+p {}
 
 
 @media (max-width: 1024px) {
@@ -109,6 +140,7 @@ h3 {
     opacity: 0;
     transform: translateX(50%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -120,6 +152,7 @@ h3 {
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
     opacity: 0;
     transform: translateX(-50%);
@@ -129,7 +162,7 @@ h3 {
 h1 {
   position: relative;
   animation-fill-mode: both;
-  
+
 }
 
 h1.slide-in {
@@ -153,4 +186,3 @@ h2.slide-in {
 h2.slide-out {
   animation: slide-out 1s ease-in-out;
 }
-
